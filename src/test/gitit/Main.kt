@@ -11,6 +11,7 @@ class Main {
             System.out.println("test main")
             starPrinter(5)
             letterPrinter("X", 6)
+            shrugPrint()
         }
 
         fun starPrinter(count: Int) {
@@ -48,6 +49,12 @@ class Main {
                 }
                 System.out.println()
             }
+        }
+
+        fun shrugPrint() {
+            //language=TEXT
+            System.out.println()
+            System.out.println("¯\\_(ツ)_/¯")
         }
 
     }
