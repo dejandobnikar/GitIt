@@ -12,6 +12,7 @@ class Main {
             starPrinter(5)
             letterPrinter("X", 6)
             shrugPrint()
+            flipTable()
         }
 
         fun starPrinter(count: Int) {
@@ -57,6 +58,12 @@ class Main {
             System.out.println("¯\\_(ツ)_/¯")
         }
 
+        fun flipTable() {
+            System.out.println()
+            System.out.println("flipping table...")
+            //language=TEXT
+            System.out.println("(╯°□°）╯︵ ┻━┻")
+        }
     }
 
 }
