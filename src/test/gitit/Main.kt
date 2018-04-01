@@ -13,6 +13,7 @@ class Main {
             letterPrinter("X", 6)
             shrugPrint()
             flipTable()
+            bear(3)
         }
 
         fun starPrinter(count: Int) {
@@ -63,6 +64,15 @@ class Main {
             System.out.println("flipping table...")
             //language=TEXT
             System.out.println("(╯°□°）╯︵ ┻━┻")
+        }
+
+        fun bear(count: Int) {
+            System.out.println()
+            //language=TEXT
+            (1..count).forEach( {
+                System.out.print("ʕ•ᴥ•ʔ ")
+            })
+            System.out.println()
         }
     }
 
