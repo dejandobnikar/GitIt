@@ -10,6 +10,7 @@ class Main {
         @JvmStatic fun main(args: Array<String>) {
             System.out.println("test main")
             starPrinter(5)
+            letterPrinter("X", 6)
         }
 
         fun starPrinter(count: Int) {
@@ -27,6 +28,26 @@ class Main {
                 System.out.println()
             }
 
+        }
+
+        fun letterPrinter(letter: String, count: Int) {
+
+            if (count < 0) {
+                throw IllegalStateException()
+            }
+
+            if (letter == null) {
+                throw NullPointerException()
+            }
+
+            System.out.println("printing letter: $letter($count)")
+
+            for (i in 1..count) {
+                for (j in 1..i) {
+                    System.out.print("$letter ")
+                }
+                System.out.println()
+            }
         }
 
     }
